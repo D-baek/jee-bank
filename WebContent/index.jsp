@@ -25,14 +25,14 @@
 </div>
 <script>
 $('#btn').click(function(){
-	alert('버튼 클릭!!');
-	location.assign(
-			'<%=request.getContextPath()%>/member.do?action=move&dest=login');
+   alert('버튼 클릭 !!');
+   location.assign(
+         '<%=request.getContextPath()%>/customer.do?page=login');
 });
-$('#a_join').click(function(){
-	alert('a 태그 클릭!!');
-	location.assign(
-			'<%=request.getContextPath()%>/member.do?action=move&dest=join');
+$('#a_join').click(function() {
+   alert('버튼 클릭 !!');
+   location.assign(
+         '<%=request.getContextPath()%>/customer.do?page=join');
 });
 </script>
 </body>

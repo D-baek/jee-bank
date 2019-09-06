@@ -3,6 +3,7 @@ import com.bank.web.pool.Constants;
 import java.io.File;
 import com.bank.web.daos.MemberDAO;
 import com.bank.web.domains.CustomerBean;
+import com.bank.web.domains.EmployeeBean;
 
 public class MemberDAOImpl implements MemberDAO{
 
@@ -13,5 +14,17 @@ public class MemberDAOImpl implements MemberDAO{
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public void insertEmployee(EmployeeBean param) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public CustomerBean login(CustomerBean param) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

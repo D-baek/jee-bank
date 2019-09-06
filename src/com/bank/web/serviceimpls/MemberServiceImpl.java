@@ -91,23 +91,9 @@ public class MemberServiceImpl implements MemberService{
 	}
 
 	@Override
-	public boolean login(MemberBean param) {
-		boolean flag = false;
-		MemberBean m = findById(param.getId());
-		for(CustomerBean c : customers) {
-			if(m.equals(c.getId()) && m.equals(c.getPw())) {
-				flag= true;
-				break;
+	public CustomerBean login(MemberBean param) {
+		return null;
 			}
-		}
-		for(EmployeeBean e : employees) {
-			if(m.equals(e.getId()) && m.equals(e.getPw())) {
-				flag= true;
-				break;
-			}
-		}
-		return flag;
-	}
 
 	@Override
 	public int countCustomers() {
